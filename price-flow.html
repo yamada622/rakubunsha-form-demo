@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>料金・ご利用の流れ｜らくぶん社 改善案</title>
+<style>
+:root {
+  --navy:#24465d; --blue:#397da5; --pale:#eef5f8;
+  --line:#dbe4e9; --text:#263746; --muted:#647581;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; background:#f5f7f9; color:var(--text);
+  font-family:Arial,"Noto Sans JP",sans-serif; line-height:1.75;
+}
+header { background:var(--navy); color:white; padding:20px; }
+.header-inner, main { max-width:900px; margin:auto; }
+header strong { font-size:21px; }
+header small { display:block; opacity:.85; }
+main { padding:28px 16px 50px; }
+.hero {
+  background:white; border-radius:16px; padding:30px 22px;
+  text-align:center; border:1px solid var(--line);
+}
+.eyebrow { color:var(--blue); font-size:12px; font-weight:bold; letter-spacing:.12em; }
+h1 { color:var(--navy); font-size:clamp(25px,4vw,34px); line-height:1.4; margin:8px 0; }
+.hero p { color:var(--muted); margin-bottom:20px; }
+.button {
+  display:inline-block; background:var(--navy); color:white;
+  padding:11px 20px; border-radius:8px; text-decoration:none;
+  font-weight:bold; margin:4px;
+}
+.button.light { background:var(--pale); color:var(--navy); }
+section {
+  background:white; border:1px solid var(--line); border-radius:14px;
+  padding:24px; margin-top:22px;
+}
+h2 { color:var(--navy); font-size:23px; margin:0 0 5px; }
+.lead { color:var(--muted); margin-top:0; font-size:14px; }
+h3 { color:var(--navy); font-size:17px; margin:22px 0 8px; }
+.table-wrap { overflow-x:auto; margin-top:14px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th,td { padding:12px 10px; border-bottom:1px solid var(--line); text-align:left; }
+th { background:var(--pale); color:var(--navy); }
+td.price { text-align:right; white-space:nowrap; font-weight:bold; }
+.note { color:var(--muted); font-size:13px; }
+.notice {
+  background:#fff6e6; border-left:4px solid #d9a04b;
+  padding:12px 15px; border-radius:5px; font-size:13px; margin-top:16px;
+}
+.steps { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:18px; }
+.step {
+  border:1px solid var(--line); border-radius:10px; padding:16px;
+  display:flex; gap:12px; align-items:flex-start;
+}
+.number {
+  background:var(--navy); color:white; border-radius:50%;
+  width:34px; height:34px; display:grid; place-items:center;
+  font-weight:bold; flex-shrink:0;
+}
+.step h3 { margin:0 0 5px; font-size:16px; }
+.step p { margin:0; font-size:13px; color:var(--muted); }
+.time {
+  display:inline-block; margin-top:7px; background:var(--pale);
+  color:var(--navy); padding:3px 8px; border-radius:5px;
+  font-size:12px; font-weight:bold;
+}
+.faq details { border-bottom:1px solid var(--line); padding:15px 0; }
+.faq summary { cursor:pointer; font-weight:bold; color:var(--navy); }
+.faq details p { font-size:14px; margin-bottom:0; }
+.cta { text-align:center; background:var(--pale); }
+footer { text-align:center; color:var(--muted); font-size:12px; padding:24px; }
+@media(max-width:600px) {
+  main { padding:16px 10px 35px; }
+  section { padding:17px; }
+  .steps { grid-template-columns:1fr; }
+  .hero { padding:24px 15px; }
+  th,td { padding:10px 7px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <strong>らくぶん社</strong>
+    <small>高校向け小論文・添削教材</small>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="eyebrow">PRICE & GUIDE</div>
+    <h1>料金・ご利用の流れ</h1>
+    <p>
+      教材ごとの料金と、お申し込みから答案返却までの流れをご案内します。<br>
+      学校の授業計画やご希望に合わせたご相談も承ります。
+    </p>
+    <a class="button" href="#prices">料金を確認する</a>
+    <a class="button light" href="#flow">利用の流れを見る</a>
+  </div>
+
+  <section id="prices">
+    <h2>1. 教材の料金</h2>
+    <p class="lead">すべて税込・1人あたりの料金です。</p>
+
+    <h3>小論文テスト・志望理由書</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>教材</th><th>字数・内容</th><th style="text-align:right">料金</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>テーマ型小論文</td><td>600字</td><td class="price">1,100円</td></tr>
+          <tr><td>テーマ型小論文</td><td>800字</td><td class="price">1,200円</td></tr>
+          <tr><td>課題文型小論文</td><td>600字</td><td class="price">1,200円</td></tr>
+          <tr><td>課題文型小論文</td><td>800字</td><td class="price">1,300円</td></tr>
+          <tr><td>志望理由書・自己PR</td><td>600字</td><td class="price">1,100円</td></tr>
+          <tr><td>志望理由書・自己PR</td><td>800字</td><td class="price">1,200円</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>その他の教材</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>教材</th><th>内容</th><th style="text-align:right">料金</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>添削用履歴書</td><td>履歴書の添削</td><td class="price">1,100円</td></tr>
+          <tr><td>探究レポート</td><td>教材のみ</td><td class="price">500円</td></tr>
+          <tr><td>探究レポート</td><td>ワークシート添削付き</td><td class="price">1,100円</td></tr>
+          <tr><td>探究レポート</td><td>小論文形式・600字</td><td class="price">1,100円</td></tr>
+          <tr><td>探究レポート</td><td>小論文形式・800字</td><td class="price">1,200円</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>オプション教材</h3>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><td>小論文の書き方・練習問題</td><td class="price">各100円</td></tr>
+          <tr><td>テーマ型小論文・構想メモ</td><td class="price">各100円</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notice">
+      <strong>お申し込み前にご確認ください</strong><br>
+      ・料金は税込・1人あたりです。<br>
+      ・お申し込みが20名以下の場合、送料（郵送代）がかかります。<br>
+      ・欠席者分は、添削を行わない場合は料金の対象になりません。<br>
+      ・料金の異なる教材の同時実施、年間複数回のご利用、教材の作成などはご相談ください。
+    </div>
+    <p class="note">※料金は公開ページに掲載されている情報をもとにした提案用の表示例です。公開前に現行料金をご確認ください。</p>
+  </section>
+
+  <section id="flow">
+    <h2>2. お申し込みから答案返却まで</h2>
+    <p class="lead">学校のご都合に合わせて実施できます。</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="number">1</div>
+        <div>
+          <h3>お問い合わせ・ご相談</h3>
+          <p>教材、テーマ、実施方法など、ご希望をお聞かせください。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">2</div>
+        <div>
+          <h3>お申し込み</h3>
+          <p>学校名、担当者名、実施日、人数、教材コース、字数などをお伝えください。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">3</div>
+        <div>
+          <h3>教材のお受け取り</h3>
+          <p>小論文テストの基本教材は、テーマ集、小論文の書き方、原稿用紙です。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">4</div>
+        <div>
+          <h3>学校でテストを実施</h3>
+          <p>授業や学校の計画に合わせて実施できます。</p>
+          <span class="time">600字：45分目安</span>
+          <span class="time">800字：60分目安</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">5</div>
+        <div>
+          <h3>答案を送付</h3>
+          <p>同梱の着払伝票を使って答案をお送りください。名票による得点記入も可能です。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">6</div>
+        <div>
+          <h3>専門スタッフが添削</h3>
+          <p>答案到着後、添削を行います。</p>
+          <span class="time">通常3週間前後</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="number">7</div>
+        <div>
+          <h3>答案返却・お支払い</h3>
+          <p>答案と請求書をお送りします。所定の口座へのお支払いをお願いします。</p>
+        </div>
+      </div>
+    </div>
+    <p class="note">※繁忙期は返却時期についてご相談する場合があります。実施日程に余裕をもってお問い合わせください。</p>
+  </section>
+
+  <section class="faq">
+    <h2>3. よくあるご質問</h2>
+    <p class="lead">お申し込み前によくいただく質問をまとめました。</p>
+
+    <details>
+      <summary>料金は、申し込んだ人数分かかりますか？</summary>
+      <p>料金は、実際に添削した枚数に単価を掛けて計算します。欠席者分はいただきません。教材は予備を含めてお送りします。</p>
+    </details>
+
+    <details>
+      <summary>教材やテーマが決まっていなくても相談できますか？</summary>
+      <p>はい。実施目的や授業計画に合わせてご相談いただけます。テーマの指定や、特定の大学の過去問に合わせた作成についてもお問い合わせください。</p>
+    </details>
+
+    <details>
+      <summary>個人でも申し込めますか？</summary>
+      <p>このページで紹介している高校向け教材は、学校単位でのサービスです。個人のお客様は、小論文家庭教師サービスをご確認ください。</p>
+    </details>
+
+    <details>
+      <summary>複数の教材を同時に実施できますか？</summary>
+      <p>料金が同じ教材の選択実施や、料金が異なる教材の同時実施についても相談できます。</p>
+    </details>
+  </section>
+
+  <section class="cta">
+    <h2>教材選びや実施方法でお困りですか？</h2>
+    <p>ご希望に合う教材や実施方法について、お気軽にご相談ください。</p>
+    <a class="button" href="https://rakubunsha.com/?page_id=19" target="_blank" rel="noopener">
+      お問い合わせページを開く
+    </a>
+    <p class="note">※ボタンは実際のらくぶん社お問い合わせページへ移動します。</p>
+  </section>
+</main>
+
+<footer>
+  らくぶん社｜料金・ご利用の流れ 改善デモ
+</footer>
+</body>
+</html>
