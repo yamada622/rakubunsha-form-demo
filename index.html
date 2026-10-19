@@ -1,1 +1,458 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>らくぶん社｜教材お申し込み</title>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans JP", sans-serif;
+  background: #f4f7fa;
+  color: #263746;
+  line-height: 1.7;
+}
+
+header {
+  background: #24465d;
+  color: white;
+  padding: 22px 16px;
+}
+
+.header-inner, main {
+  max-width: 760px;
+  margin: auto;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+header p {
+  margin: 3px 0 0;
+  font-size: 13px;
+}
+
+main { padding: 24px 14px 50px; }
+
+.intro { text-align: center; margin-bottom: 24px; }
+.intro h1 { font-size: 27px; color: #24465d; }
+.intro p { color: #61717c; font-size: 14px; }
+
+.notice {
+  background: #fff5df;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+section {
+  background: white;
+  padding: 22px;
+  margin-bottom: 17px;
+  border: 1px solid #dce4e9;
+  border-radius: 12px;
+}
+
+h3 { color: #24465d; margin-top: 0; }
+.small { color: #687984; font-size: 13px; }
+
+.choice {
+  display: block;
+  padding: 12px;
+  margin: 9px 0;
+  border: 1px solid #d6e0e6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.choice:has(input:checked) {
+  background: #edf5fa;
+  border-color: #397da5;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #397da5;
+}
+
+label.field {
+  display: block;
+  font-weight: bold;
+  margin: 14px 0 5px;
+}
+
+input[type="text"], input[type="email"],
+input[type="tel"], select, textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd6de;
+  border-radius: 7px;
+  font: inherit;
+  background: white;
+}
+
+textarea { min-height: 85px; }
+.hidden { display: none !important; }
+
+.summary {
+  background: #f1f6f9;
+  padding: 15px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.primary { background: #24465d; color: white; }
+.secondary { background: #e6edf1; color: #24465d; }
+.actions { display: flex; gap: 10px; margin-top: 18px; }
+
+#message {
+  display: none;
+  margin-top: 15px;
+  background: #e9f7ed;
+  padding: 13px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  color: #687984;
+  padding: 20px;
+  font-size: 12px;
+}
+
+@media(max-width: 520px) {
+  section { padding: 16px; }
+  .intro h1 { font-size: 23px; }
+  .actions { flex-direction: column; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="header-inner">
+    <h2>らくぶん社</h2>
+    <p>高校向け教材・添削サービス</p>
+  </div>
+</header>
+
+<main>
+  <div class="intro">
+    <h1>教材のお申し込み・お問い合わせ</h1>
+    <p>
+      ご希望の教材とテーマをお選びください。<br>
+      まだ決まっていない場合もご相談いただけます。
+    </p>
+  </div>
+
+  <div class="notice">
+    【提案用デモ】このページは改善案の確認用です。
+    入力内容は送信・保存されません。
+  </div>
+
+  <form id="form">
+
+    <section>
+      <h3>STEP 1　ご希望の内容</h3>
+      <label class="choice">
+        <input type="radio" name="purpose"
+          value="教材の申し込み" checked>
+        教材を申し込みたい
+      </label>
+      <label class="choice">
+        <input type="radio" name="purpose"
+          value="資料・詳細の問い合わせ">
+        教材の資料・詳細を知りたい
+      </label>
+      <label class="choice">
+        <input type="radio" name="purpose"
+          value="相談">
+        教材やテーマについて相談したい
+      </label>
+    </section>
+
+    <section>
+      <h3>STEP 2　教材を選択</h3>
+      <p class="small">複数選択できます。</p>
+
+      <label class="choice">
+        <input type="checkbox" name="material"
+          value="小論文テスト">
+        <strong>小論文テスト</strong><br>
+        <span class="small">テーマ型・添削など</span>
+      </label>
+
+      <label class="choice">
+        <input type="checkbox" name="material"
+          value="エントリーシート添削">
+        <strong>エントリーシート添削</strong><br>
+        <span class="small">応募書類の添削</span>
+      </label>
+
+      <label class="choice">
+        <input type="checkbox" name="material"
+          value="履歴書添削">
+        <strong>履歴書添削</strong>
+      </label>
+
+      <label class="choice">
+        <input type="checkbox" name="material"
+          value="相談・未定">
+        まだ決まっていない・相談したい
+      </label>
+    </section>
+
+    <section id="themeSection">
+      <h3>STEP 3　テーマ・内容を選択</h3>
+      <p class="small">
+        小論文テストを選択すると、テーマの選択欄が表示されます。
+      </p>
+
+      <div id="themeOptions" class="hidden">
+        <label class="choice">
+          <input type="radio" name="theme"
+            value="テーマ集から選ぶ">
+          テーマ集から選ぶ
+        </label>
+
+        <label class="choice">
+          <input type="radio" name="theme"
+            value="大学の過去問">
+          特定の大学の過去問を使う
+        </label>
+
+        <label class="choice">
+          <input type="radio" name="theme"
+            value="先生がテーマを指定">
+          先生がテーマを指定する
+        </label>
+
+        <label class="choice">
+          <input type="radio" name="theme"
+            value="相談して決める">
+          相談して決める
+        </label>
+      </div>
+
+      <div id="topicField" class="hidden">
+        <label class="field" for="topic">希望するテーマ</label>
+        <select id="topic">
+          <option value="">選択してください</option>
+          <option>環境・持続可能性</option>
+          <option>情報・AI・デジタル社会</option>
+          <option>医療・福祉</option>
+          <option>地域社会・まちづくり</option>
+          <option>教育・子ども</option>
+          <option>その他・相談したい</option>
+        </select>
+        <p class="small">
+          ※テーマ名は表示例です。実際のテーマ集に合わせて変更します。
+        </p>
+      </div>
+
+      <div id="universityField" class="hidden">
+        <label class="field" for="university">
+          大学名・学部・年度
+        </label>
+        <input id="university" type="text"
+          placeholder="例：〇〇大学 △△学部・2025年度">
+      </div>
+
+      <div id="customField" class="hidden">
+        <label class="field" for="custom">
+          指定したいテーマ・出題内容
+        </label>
+        <textarea id="custom"
+          placeholder="希望するテーマや条件をご記入ください"></textarea>
+      </div>
+
+      <div id="otherField" class="hidden">
+        <label class="field" for="other">
+          ご希望の教材・内容
+        </label>
+        <textarea id="other"
+          placeholder="希望する教材や添削内容をご記入ください"></textarea>
+      </div>
+    </section>
+
+    <section>
+      <h3>STEP 4　学校・ご担当者情報</h3>
+
+      <label class="field" for="school">学校名（必須）</label>
+      <input id="school" type="text" required
+        placeholder="例：〇〇高等学校">
+
+      <label class="field" for="person">ご担当者名（必須）</label>
+      <input id="person" type="text" required
+        placeholder="例：山田 花子">
+
+      <label class="field" for="email">メールアドレス（必須）</label>
+      <input id="email" type="email" required
+        placeholder="example@school.jp">
+
+      <label class="field" for="phone">電話番号（任意）</label>
+      <input id="phone" type="tel"
+        placeholder="例：03-1234-5678">
+
+      <label class="field" for="students">
+        予定人数・クラス数（任意）
+      </label>
+      <input id="students" type="text"
+        placeholder="例：2クラス・約80名">
+
+      <label class="field" for="timing">使用予定時期（任意）</label>
+      <select id="timing">
+        <option value="">選択してください</option>
+        <option>すぐに使用したい</option>
+        <option>1か月以内</option>
+        <option>学期内</option>
+        <option>時期未定</option>
+      </select>
+
+      <label class="field" for="notes">
+        その他のご要望・質問（任意）
+      </label>
+      <textarea id="notes"
+        placeholder="納期やご希望など"></textarea>
+    </section>
+
+    <section>
+      <h3>STEP 5　お申し込み内容の確認</h3>
+      <p class="small">
+        選択内容を確認できます。修正する場合は上の項目に戻ってください。
+      </p>
+
+      <div class="summary" id="summary">
+        ここに選択内容が表示されます。
+      </div>
+
+      <div class="actions">
+        <button type="button" class="secondary"
+          id="reset">入力をリセット</button>
+        <button type="submit" class="primary">
+          入力内容を確認する
+        </button>
+      </div>
+
+      <div id="message">
+        デモの確認が完了しました。実際の申し込み送信は行われていません。
+      </div>
+    </section>
+
+  </form>
+</main>
+
+<footer>
+  らくぶん社｜申し込みページ改善案（デモ）
+</footer>
+
+<script>
+const $ = id => document.getElementById(id);
+
+function selected(name) {
+  return [...document.querySelectorAll(
+    'input[name="' + name + '"]:checked'
+  )].map(el => el.value);
+}
+
+function update() {
+  const materials = selected("material");
+  const essay = materials.includes("小論文テスト");
+  const theme = selected("theme")[0] || "";
+
+  $("themeOptions").classList.toggle("hidden", !essay);
+  $("themeSection").classList.toggle(
+    "hidden", materials.length === 0
+  );
+
+  $("topicField").classList.toggle(
+    "hidden", !essay || theme !== "テーマ集から選ぶ"
+  );
+  $("universityField").classList.toggle(
+    "hidden", !essay || theme !== "大学の過去問"
+  );
+  $("customField").classList.toggle(
+    "hidden", !essay || theme !== "先生がテーマを指定"
+  );
+
+  const other = materials.some(m =>
+    m !== "小論文テスト"
+  );
+  $("otherField").classList.toggle("hidden", !other);
+
+  const purpose =
+    document.querySelector('input[name="purpose"]:checked')?.value
+    || "未選択";
+
+  const details = [
+    $("topic").value,
+    $("university").value,
+    $("custom").value,
+    $("other").value
+  ].filter(Boolean);
+
+  const lines = [
+    ["ご希望の内容", purpose],
+    ["教材", materials.join("、") || "未選択"],
+    ["テーマの選び方", essay ? (theme || "未選択") : "該当なし"],
+    ["テーマ・詳細", details.join("\n") || "未入力"],
+    ["学校名", $("school").value || "未入力"],
+    ["ご担当者名", $("person").value || "未入力"],
+    ["メールアドレス", $("email").value || "未入力"],
+    ["電話番号", $("phone").value || "未入力"],
+    ["予定人数・クラス数", $("students").value || "未入力"],
+    ["使用予定時期", $("timing").value || "未入力"],
+    ["その他のご要望", $("notes").value || "未入力"]
+  ];
+
+  $("summary").textContent = lines
+    .map(([label, value]) => label + "：\n" + value)
+    .join("\n\n");
+}
+
+document.querySelectorAll("input, select, textarea")
+  .forEach(el => {
+    el.addEventListener("input", update);
+    el.addEventListener("change", update);
+  });
+
+$("form").addEventListener("submit", event => {
+  event.preventDefault();
+
+  if (!$("form").reportValidity()) return;
+
+  update();
+  $("message").style.display = "block";
+  $("message").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+});
+
+$("reset").addEventListener("click", () => {
+  $("form").reset();
+  $("message").style.display = "none";
+  update();
+});
+
+update();
+</script>
+</body>
+</html>
+
