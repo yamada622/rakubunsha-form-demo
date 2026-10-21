@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小論文テストのご案内｜らくぶん社</title>
+<style>
+:root{--blue:#07539d;--blue2:#087ac4;--sky:#dff4ff;--line:#9dddf8;--ink:#18364b;--muted:#476173;--pink:#ef5d79;--green:#64a83d;--orange:#f39a32;--purple:#8852bd}
+*{box-sizing:border-box}body{margin:0;background:#f5fbff;color:var(--ink);font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.65}
+.page{max-width:1180px;margin:auto;background:#fff;box-shadow:0 0 30px #d8eaf4}
+.hero{position:relative;overflow:hidden;padding:24px 32px 22px;background:linear-gradient(115deg,#e7f7ff,#fff 65%,#e8f8ff);border-bottom:6px solid #e1f5ff;display:flex;align-items:center;gap:28px;min-height:145px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0;color:var(--blue);font-weight:900;font-size:clamp(20px,2.2vw,30px);line-height:1.15}
+.leaf{width:50px;height:48px;position:relative;display:inline-block}
+.leaf:before,.leaf:after{content:"";position:absolute;background:#087bc2;border-radius:100% 0 100% 0;transform:rotate(-18deg)}
+.leaf:before{width:24px;height:39px;left:3px;top:4px}.leaf:after{width:25px;height:30px;left:24px;top:0;transform:rotate(8deg)}
+.brand small{display:block;color:#18364b;font-size:11px;letter-spacing:.05em;margin-top:5px}
+.hero-title{flex:1;text-align:center;color:var(--blue);font-weight:900}
+.hero-title h1{margin:0;font-size:clamp(25px,4vw,46px);letter-spacing:.02em;line-height:1.2}
+.hero-title p{margin:10px 0 0;font-size:clamp(13px,1.6vw,19px);font-weight:800}
+.hero-note{max-width:170px;color:var(--blue);font-weight:800;font-size:13px;text-align:center;transform:rotate(-5deg);border-bottom:2px solid #1683c8;padding:8px}
+main{padding:22px 30px 28px}
+.top-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:24px;align-items:stretch}
+.section-title{margin:0 0 10px;background:linear-gradient(90deg,#0782ca,#07539d);color:white;font-size:22px;font-weight:900;padding:7px 18px;border-radius:9px 18px 3px 3px;display:flex;align-items:center;gap:12px}
+.section-title span{font-size:15px;color:#fff}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border:1px solid #9eddf6;padding:8px 10px}
+th{background:#d9f2ff;font-weight:900;text-align:center}
+td:first-child{font-weight:700;background:#f7fcff}
+td:not(:first-child){text-align:center;font-weight:800}
+.price-note{font-size:11px;color:#3e5c6d;margin:8px 2px 0;line-height:1.7}
+.subtable{margin-top:10px}
+.features{border:2px solid #fff0d6;border-radius:15px;padding:14px 18px;background:linear-gradient(145deg,#fff,#fffdf7)}
+.ribbon{background:var(--pink);color:#fff;display:inline-block;font-size:19px;font-weight:900;padding:5px 20px;border-radius:4px 10px 4px 10px;transform:rotate(-2deg);margin-bottom:8px}
+.feature{display:grid;grid-template-columns:54px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid #e6e6e6}
+.feature:last-child{border-bottom:0}.num{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:white;font-size:27px;font-weight:900;background:var(--pink)}
+.feature:nth-of-type(3) .num{background:var(--green)}.feature:nth-of-type(4) .num{background:var(--orange)}.feature:nth-of-type(5) .num{background:#4d94d5}
+.feature h3{margin:0 0 3px;color:var(--pink);font-size:17px;line-height:1.35}.feature:nth-of-type(3) h3{color:var(--green)}.feature:nth-of-type(4) h3{color:var(--orange)}.feature:nth-of-type(5) h3{color:#2679bc}
+.feature p{font-size:12px;margin:0;color:#263f50}
+.flow-section{margin-top:22px}
+.flow{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.step{position:relative;border:1.5px solid #a6e3fa;border-radius:12px;padding:10px 9px 12px;background:linear-gradient(#fff,#f9fdff);min-width:0}
+.step-head{display:flex;align-items:flex-start;gap:6px;color:var(--blue);font-weight:900;font-size:13px;line-height:1.35;min-height:48px}
+.step-num{flex-shrink:0;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#ed6b87;color:#fff;font-size:16px}
+.step:nth-child(2) .step-num{background:#67a841}.step:nth-child(3) .step-num{background:#f39a32}.step:nth-child(4) .step-num{background:#4b9bd9}.step:nth-child(5) .step-num{background:#8b5bb8}.step:nth-child(6) .step-num{background:#1ba6ad}.step:nth-child(7) .step-num{background:#6a70c9}
+.step-icon{text-align:center;color:#1988c8;font-size:29px;margin:4px 0 7px;line-height:1.1}
+.step p{font-size:10.5px;margin:0;color:#294557}
+.bottom-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:22px}
+.faq,.usage{border-radius:14px;padding:14px 18px}
+.faq{background:linear-gradient(135deg,#f3fbf4,#e8f6e8)}
+.usage{background:linear-gradient(135deg,#eaf7ff,#f4faff)}
+.bottom-title{margin:0 0 10px;color:#176f49;font-size:19px;font-weight:900}.usage .bottom-title{color:var(--blue)}
+.qa{margin:9px 0 13px;font-size:12px}.qa strong{display:block;color:#165c43;margin-bottom:3px}.qa strong:before{content:"Q";display:inline-grid;place-items:center;background:#176f49;color:white;border-radius:50%;width:22px;height:22px;margin-right:7px;font-size:12px}.qa p{margin:0 0 0 29px}
+.usage ul{margin:0;padding-left:20px;font-size:12px}.usage li{margin:5px 0}
+.tagline{color:var(--blue);font-weight:900;font-size:17px;text-align:center;margin:16px 0 0}
+footer{background:linear-gradient(90deg,#07539d,#0877bd);color:white;padding:18px 30px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.footer-brand{font-size:25px;font-weight:900;display:flex;align-items:center;gap:10px}.footer-brand .leaf:before,.footer-brand .leaf:after{background:#fff}
+.phone{font-size:clamp(20px,3vw,32px);font-weight:900;white-space:nowrap}.hours{font-size:12px;border-left:1px solid #b5d9f3;padding-left:15px}
+.cta{background:#fff;color:var(--blue);font-weight:900;text-decoration:none;border-radius:13px;padding:12px 20px;text-align:center;line-height:1.35}
+@media(max-width:850px){.hero{flex-wrap:wrap;gap:12px;padding:20px}.hero-title{order:3;flex-basis:100%}.hero-note{margin-left:auto}.top-grid,.bottom-grid{grid-template-columns:1fr}.flow{grid-template-columns:repeat(4,minmax(0,1fr))}.step p{font-size:11px}}
+@media(max-width:520px){main{padding:16px 12px}.hero{padding:16px 12px}.brand{font-size:20px}.hero-note{max-width:120px;font-size:11px}.section-title{font-size:19px}.flow{grid-template-columns:repeat(2,minmax(0,1fr))}.step p{font-size:11px}.feature h3{font-size:15px}table{font-size:12px}th,td{padding:6px 5px}.features{padding:12px}.footer-brand{font-size:22px}.hours{border-left:0;padding-left:0}}
+</style>
+</head>
+<body>
+<div class="page">
+<header class="hero">
+  <div class="brand"><span class="leaf" aria-hidden="true"></span><div>らくぶん社<small>小論文で、未来をひらく</small></div></div>
+  <div class="hero-title"><h1>小論文テストのご案内</h1><p>— 書く機会を増やし、実践的な小論文指導を —</p></div>
+  <div class="hero-note">生徒一人ひとりの<br>「書く力」を<br>応援します</div>
+</header>
+<main>
+<div class="top-grid">
+<section>
+<h2 class="section-title">料金 <span>小論文テスト・添削</span></h2>
+<table aria-label="小論文テスト料金">
+<thead><tr><th>教材・コース</th><th>600字</th><th>800字</th></tr></thead>
+<tbody>
+<tr><td>テーマ型小論文</td><td>1,100円</td><td>1,200円</td></tr>
+<tr><td>課題文型小論文</td><td>1,200円</td><td>1,300円</td></tr>
+<tr><td>志望理由書（自己PR）</td><td>1,100円</td><td>1,200円</td></tr>
+<tr><td>探究レポート<br><small>（小論文での提出）</small></td><td>1,100円</td><td>1,200円</td></tr>
+</tbody></table>
+<table class="subtable" aria-label="その他の教材料金"><tbody>
+<tr><td>添削用履歴書</td><td colspan="2">1,100円</td></tr>
+<tr><td>オプション教材</td><td colspan="2" style="text-align:left;font-weight:500">・小論文の書き方 練習問題<br>・テーマ型小論文 構想メモ</td><td>各100円</td></tr>
+<tr><td>探究レポート</td><td colspan="2" style="text-align:left;font-weight:500">・教材のみ<br>・ワークシート添削付</td><td>500円<br>1,100円</td></tr>
+</tbody></table>
+<p class="price-note">※ すべて税込・1人あたりの価格です。<br>※ お申込みが20名以下の場合は、送料（郵送代）をご負担いただきます。<br>※ 料金は実際に添削した答案の枚数でご請求します。欠席者の分はいただきません。</p>
+</section>
+<section class="features">
+<div class="ribbon">らくぶん社の特徴</div>
+<div class="feature"><div class="num">1</div><div><h3>リーズナブルな価格で、<br>繰り返し練習できます</h3><p>できるだけ多く書く機会を持っていただけるよう、利用しやすい価格にしています。</p></div></div>
+<div class="feature"><div class="num">2</div><div><h3>学校のご都合に合わせて<br>実施できます</h3><p>通常の授業・講習・テストなど、学校のスケジュールに合わせてご利用いただけます。</p></div></div>
+<div class="feature"><div class="num">3</div><div><h3>一人ひとりの答案を添削</h3><p>生徒一人ひとりの答案を添削し、学校での小論文指導に活用していただけます。</p></div></div>
+<div class="feature"><div class="num">4</div><div><h3>リピート利用の学校が多数</h3><p>添削の丁寧さを評価いただき、長年継続してご利用くださっている学校様があります。</p></div></div>
+</section>
+</div>
+
+<section class="flow-section">
+<h2 class="section-title">サービスの流れ</h2>
+<div class="flow">
+<div class="step"><div class="step-head"><span class="step-num">1</span><span>資料請求・<br>お問い合わせ</span></div><div class="step-icon">✉</div><p>教材や実施方法について、お気軽にご相談ください。</p></div>
+<div class="step"><div class="step-head"><span class="step-num">2</span><span>お申し込み</span></div><div class="step-icon">☎</div><p>学校名・ご担当者名・実施日・人数・コース・字数などをお伝えください。</p></div>
+<div class="step"><div class="step-head"><span class="step-num">3</span><span>教材送付</span></div><div class="step-icon">▤</div><p>テーマ集、小論文の書き方、原稿用紙などをお送りします。</p></div>
+<div class="step"><div class="step-head"><span class="step-num">4</span><span>ご実施</span></div><div class="step-icon">✎</div><p>ご都合に合わせて実施。600字は約45分、800字は約60分が目安です。</p></div>
+<div class="step"><div class="step-head"><span class="step-num">5</span><span>答案送付</span></div><div class="step-icon">▣</div><p>同梱の着払い伝票で答案をお送りください。名簿も同封できます。</p></div>
+<div class="step"><div class="step-head"><span class="step-num">6</span><span>添削</span></div><div class="step-icon">▤</div><p>答案到着後、通常約3週間で返却します。繁忙期はご相談ください。</p></div>
+<div class="step"><div class="step-head"><span class="step-num">7</span><span>答案ご返却・<br>お支払い</span></div><div class="step-icon">￥</div><p>添削答案と請求書をお送りします。お支払いは請求書をご確認ください。</p></div>
+</div>
+</section>
+
+<div class="bottom-grid">
+<section class="faq">
+<h2 class="bottom-title">？ よくあるご質問</h2>
+<div class="qa"><strong>料金は、申込人数での請求でしょうか？</strong><p>実際に添削した枚数×単価でご請求します。欠席者の分はいただきません。</p></div>
+<div class="qa"><strong>なぜ、他社よりお求めやすいのですか？</strong><p>教材をシンプルで使いやすい形にし、書く機会を増やしていただける価格を目指しています。</p></div>
+<div class="qa"><strong>個人での申込は可能でしょうか？</strong><p>学校単位でのサービスです。個人のお客様は、弊社の小論文家庭教師サービスをご利用ください。</p></div>
+</section>
+<section class="usage">
+<h2 class="bottom-title">☼ ご利用について</h2>
+<ul>
+<li>20名以下のお申込み：送料（郵送代）をご負担いただきます。</li>
+<li>年間複数回のご利用や割引についてもご相談いただけます。</li>
+<li>料金の異なるコースの同時受験もご相談可能です。</li>
+<li>教材作成やリライト（書き直し）などもご相談ください。</li>
+<li>基本的に学校単位でのご利用となります。</li>
+</ul>
+<p class="tagline">「書く → 添削してもらう → 改善する」<br>この繰り返しが、小論文の力を伸ばします。</p>
+</section>
+</div>
+</main>
+<footer>
+<div class="footer-brand"><span class="leaf" aria-hidden="true"></span>らくぶん社</div>
+<div class="phone">☎ 043-441-3466</div>
+<div class="hours">受付時間 9:00〜17:00<br>（土日祝除く）</div>
+<a class="cta" href="https://rakubunsha.com/?page_id=19">まずはお気軽に<br>お問い合わせください。</a>
+</footer>
+</div>
+</body>
+</html>
